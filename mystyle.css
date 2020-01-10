@@ -1,0 +1,10 @@
+.divclass {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  background: burlywood;
+  line-height: 300px;
+  text-align: center;
+  font-size: x-large;
+  display: inline-block;
+}
