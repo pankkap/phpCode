@@ -17,7 +17,7 @@ print("Print output with print command<br>");
 
 // Single line comment
 /* Multiline 
-    COmment
+    Comment
 */
 # scripting (perl) Format comment
 
