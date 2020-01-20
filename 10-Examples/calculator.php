@@ -10,7 +10,7 @@ $second_num = $_POST['second_num'];
 $operator = $_POST['operator'];
  
 
-if (is_numeric($first_num) && is_numeric($second_num)) {
+// if (is_numeric($first_num) && is_numeric($second_num)) {
     switch ($operator) {
         case "Add":
            $result = $first_num + $second_num;
@@ -25,7 +25,7 @@ if (is_numeric($first_num) && is_numeric($second_num)) {
             $result = $first_num / $second_num;
     }
 }
-}
+// }
 ?>
 
 <!DOCTYPE html>
