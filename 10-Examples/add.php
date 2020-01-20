@@ -6,7 +6,7 @@ if(isset($sub))
 {
     $a = $no1;
     $b = $no2;
-    $c = $a % $b;
+    $c = $a + $b;
 
     echo "<p align='center'>Sum of Two numbers is : ".$c."</p><br>";
 } 

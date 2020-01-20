@@ -1,8 +1,8 @@
 <?php
 
 // First PHP Code
-echo "This is my first PHP code";
-print " This is my code for PHP Scripting Language";
+echo "1. This is my first PHP code<br>";
+print "2.  This is my code for PHP Scripting Language";
 
 // Echo and Print Commands
 
@@ -32,10 +32,11 @@ ECHO "hello3<br>";
 
 // VARIBALE IN php is case sensitive
 
-$abc =5;
-$abc =15;
+//$abc =5;
+$Abc =15;
 $ABC =25;
-echo $abc. $abc. $ABC;
+$ABC =35;
+//echo $abc."hello world". $Abc. $ABC;
 
 
 // constants
@@ -57,6 +58,8 @@ $dt3 = 3.2;
 $dt4 = true;
 $dt5 = null;
 $dt6 = array(2,3,5);
+$dt1="panakj";
+echo "<br>datatype: $dt1";
 
 echo $dt6[0];       // to print array single element
                     // loop to print all elements
@@ -99,11 +102,13 @@ echo str_replace("Hello","hru..??","Hello World");
 
 // is_int() Function
 // is_float() Function
+// isset() function
+
 // Casting 
 
-$abcd = 125.4;
+$abcd = 125.5;
 $intnum = (int)$abcd;           // cast float to int
-
+echo "<h1>Casting Done: $intnum <br></h1>";
 echo "<br><br>";
 var_dump(is_float($abcd));      // check wheater the varibale is 
                                 // float or not
