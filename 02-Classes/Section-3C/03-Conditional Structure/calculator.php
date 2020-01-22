@@ -45,7 +45,7 @@ $operator = $_POST['operator'];
                 <input type="number" name="first_num" required="required" value="<?php echo $first_num; ?>" /> <b>First Number</b>
             </p>
             <p>
-                <input type="number" name="second_num" required="required" value="<?php echo $second_num; ?>" /> <b>Second Number</b>
+                <input type="number" name="second_num" id="second_num" required="required" value="<?php echo $second_num; ?>" /> <b>Second Number</b>
             </p>
             <p>
                 <input readonly="readonly" name="result" value="<?php echo $result; ?>"> <b>Result</b>
