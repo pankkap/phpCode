@@ -8,11 +8,11 @@ for($row=1;$row<=4;$row++)
 		$total=$row+$column;
 		if($total%2==0)
 		{  
-			echo "<td  style=''align='center' height=75px width=30px>"."Hello"."</td>";  
+			echo "<td  style='background:red'align='center' height=75px width=30px>"."Hello"."</td>";  
 		}  
 		else  
 		{  
-			echo "<td  align='center' height=75px width=30px>"."World"."</td>";  
+			echo "<td  style='background:yellow'align='center' height=75px width=30px>"."World"."</td>";  
 		}  
 	}  
 	echo "</tr>";  

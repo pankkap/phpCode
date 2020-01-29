@@ -15,7 +15,7 @@ function sum(...$nums)  {       // varibale length arguments
 }
 
 echo sum(1, 2, 3) . "\n";
-echo sum(5,5,5,5) . "\n";
+echo sum(11, 22, 3, 4) . "\n";
 echo sum(1, 2, 3, 4, 5) . "\n";
 echo sum(5) . "\n";
 
