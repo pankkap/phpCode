@@ -1,6 +1,6 @@
 <?php
     //defining a variable
-    $marks = 75;
+    $marks = 55;
     
     if ($marks>79){
         echo "A";

@@ -1,0 +1,63 @@
+<!-- HTML Structure -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My Homepage</title>
+    
+    <!-- link to external css -->
+    <link rel="stylesheet" href="mystyle.css" />
+
+    <!-- Internal css -->
+    <style>
+      #div-1 {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        background: burlywood;
+        line-height: 300px;
+        text-align: center;
+        font-size: x-large;
+        display: inline-block;
+      }
+      #div-2 {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        background-color: cornflowerblue;
+        line-height: 300px;
+        text-align: center;
+        font-size: x-large;
+        display: inline-block;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">
+      This is my first Html Page
+    </h1>
+    <div id="div-1" class="divclass">
+      This is my Section--1
+    </div>
+
+    <div id="div-2" class="divclass">
+      This is my Section--2
+    </div>
+    <br /><br />
+    <button onclick="hello()">Click Me</button>
+    
+    <!-- Javascript -->
+    <script>
+      function hello() {
+        alert("Hello h r u..?");
+      }
+    </script>
+
+    <!-- Link to External Javascript -->
+    <!-- <script src="myscript.js"> </script> -->
+    
+  </body>
+</html>
