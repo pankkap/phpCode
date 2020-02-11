@@ -1,7 +1,7 @@
 <?php
 // variable argument in function 
 
- 
+ $x =10;
 
 function sum(...$nums)  {       // varibale length arguments
     

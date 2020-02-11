@@ -1,16 +1,16 @@
 <?php
 // strict requirement of PHP 7 
-declare (strict_types=1);
+$x =10;
 
-function sum1(int $num1, int $num2)
+function sum1()
 {
-    echo "\n This is function with arguments";
-    $c = $num1 + $num2;
-    return $c;
+    
+    echo $x;
+    
 }
+sum1();
 
-echo "\n Return from Function: ".sum1(25,10);
-
+// echo $x;
 
 
 ?>
