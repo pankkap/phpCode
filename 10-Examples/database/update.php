@@ -33,6 +33,7 @@ if($total!=0)
             <th>RollNo.</th>
             <th>Name</th>
             <th>Class</th>
+            <th colspan="2">Operations</th>
         </tr>
     </thead>
     
@@ -45,6 +46,8 @@ if($total!=0)
                 <td>".$result['rollno']."</td>
                 <td>".$result['name']."</td>
                 <td>".$result['class']."</td>
+                <td><a href='update1.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</a></td>
+                <td><a href='delete.php?rn=$result[rollno]'>Delete</a></td>
                 
             </tr>";
     }
