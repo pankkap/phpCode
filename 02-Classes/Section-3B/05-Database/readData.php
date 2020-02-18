@@ -34,7 +34,7 @@ if($totRec!=0)
             <th>Rollno</th>
             <th>Name</th>
             <th>Class</th>
-            <th class="text-center" colspan='2' >Operations</th>
+            <!-- <th class="text-center" colspan='2' >Operations</th> -->
         </tr>
 </thead>
 
@@ -48,8 +48,7 @@ if($totRec!=0)
             <td>".$result['name']."</td>
             <td>".$result['class']."</td>
     
-            <td><a href='update.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</a></td>
-            <td>Delete</td>
+            
         </tr>
     
     
