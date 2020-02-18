@@ -22,6 +22,7 @@ if($totRec)
             <th>Rollno</th>
             <th>Name</th>
             <th>Class</th>
+            <th colspan='2'>Operations</th>
         </tr>
   
 
@@ -36,6 +37,8 @@ if($totRec)
                 <td>".$result['rollno']."</td>
                 <td>".$result['name']."</td>
                 <td>".$result['class']."</td>
+                <td><a href='update.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</a></td>
+                <td><a href='#'>Delete</a></td>
             </tr>            
              ";
 
