@@ -12,7 +12,7 @@ if($data)
 {
     echo "<script>alert('Record Deleted')</script>";
     ?>
-    <meta http-equiv="refresh" content="3; url=http://localhost/phpCode/02-Classes/Section-3E/05-Database/read.php">
+    <meta http-equiv="refresh" content="0; url=http://localhost/phpCode/02-Classes/Section-3E/05-Database/read.php">
     <?php
 }
 else

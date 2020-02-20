@@ -13,7 +13,7 @@
 <div class="container">
     <div class="card">
         <div class="card-body text-white bg-primary p-1">
-            <h2 class="text-center">CRUD Operations</h2>
+            <h2 class="text-center">CRUD OPERATIONS</h2>
         </div>
     </div>
 </div>    
