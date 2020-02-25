@@ -38,7 +38,7 @@ if($totRec)
                 <td>".$result['name']."</td>
                 <td>".$result['class']."</td>
                 <td><a href='update.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</a></td>
-                <td><a href='delete.php?rn=$result[rollno]' onclick='return DeleteRecord()'>Delete</a></td>
+                <td><a href='delete.php?rn=$result[rollno]' onclick='return DeleteThis()'>Delete</a></td>
             </tr>            
              ";
 
@@ -57,9 +57,11 @@ else
 ?>
   </table>
   <script>
-    function DeleteRecord()
+    function DeleteThis()
     {
         return confirm("Do you want to Delete Record");
     }
 </script>
   
+<br><br>
+<a href="http://localhost/phpCode/02-Classes/Section-3D/05-Database/InsertFirstRecordForm.php">+ Add New Record </a>

@@ -7,7 +7,7 @@
     <title>Insert Record</title>
 </head>
 <body>
-   <form action="" method="POST">
+   <form action="" method="POST" enctype="multipart/form-data">
    
    <label for="">Rollno. </label>
    <input type="number" name="t1"><br><br>
@@ -18,6 +18,9 @@
 
    <input type="text" name="t3" ><br><br>
 
+   <label>Upload Image: </label> 
+   <input type="file" name="file"><br><br>
+    
     <input type="submit" name="b1" value="Insert Record">
 
    </form> 
@@ -38,11 +41,18 @@ if(isset($_POST['b1']))
 
     $class = $_POST['t3'];
 
+    $f = $_FILES['file']['name'];
+    
+    $upload = "upload/".$file;
+    
+    
+    move_uploaded_file($_FILES['file'][tmp_name],$upload);
+
     if($roll!="" and $name!="" && $class!="")
     {
 
 
-    $query = "insert into secetable values('$roll','$name','$class')";
+    $query = "insert into secetable values('$roll','$name','$class','$upload')";
 
 
     //"INSERT INTO `secbtable`(`rollno`, `name`, `class`) VALUES (110,'manish kumar','3B')
@@ -65,4 +75,6 @@ else{
 }
 
 }
+
+
 ?>

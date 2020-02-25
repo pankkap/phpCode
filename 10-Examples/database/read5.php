@@ -20,7 +20,7 @@ td{
 <?php
 include 'connection.php';
 
-$query = "SELECT * FROM secetable";
+$query = "SELECT * FROM crudtable";
 
 $data = mysqli_query($conn,$query);
 
@@ -40,6 +40,7 @@ if($totRec!=0)
     <table >
         <tr>
             <th>RollNo.</th>
+            <th>Image</th>
             <th>Name</th>
             <th>Class</th>
             <th colspan="2">Operations</th>
@@ -54,6 +55,7 @@ if($totRec!=0)
 
         <tr>
             <td>".$result['rollno']."</td>
+            <td><img src='".$result['file']."' width='50'></td>
             <td>".$result['name']."</td>
             <td>".$result['class']."</td>
             <td><a href='update5.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</td>

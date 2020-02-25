@@ -69,7 +69,7 @@ if($totRec!=0)
 
         <tr>
             <td>".$result['rollno']."</td>
-            <td><img src='".$result['photo']."' width='50'></td>
+            <td><a href='".$result['photo']."'><img src='".$result['photo']."' width='50'></td>
             <td>".$result['name']."</td>
             <td>".$result['class']."</td>
             <td><a href='update.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</a></td>
@@ -101,3 +101,7 @@ else
         return confirm("Do u want to delete");
     }
 </script>
+
+
+
+

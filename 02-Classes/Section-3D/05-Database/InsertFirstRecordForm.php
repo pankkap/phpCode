@@ -48,7 +48,7 @@ if(isset($_GET['b1']))
 
                 if($data)
                 {
-                    echo "Record Insserted Succesfully";
+                    echo "<p style='color:green'>Record Inserted Succesfully <a href='http://localhost/phpCode/02-Classes/Section-3D/05-Database/readRecords.php#'>Click to See Updated Records</a>";
                 }
                 else
                 {
