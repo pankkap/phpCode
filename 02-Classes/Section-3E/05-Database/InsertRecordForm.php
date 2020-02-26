@@ -41,18 +41,18 @@ if(isset($_POST['b1']))
 
     $class = $_POST['t3'];
 
-    $f = $_FILES['file']['name'];
+    echo $file = $_FILES['file']['name'];
     
-    $upload = "upload/".$file;
+    echo $upload = "upload/".$file;
     
     
-    move_uploaded_file($_FILES['file'][tmp_name],$upload);
+    echo (move_uploaded_file($_FILES['file'][tmp_name],$upload));
 
     if($roll!="" and $name!="" && $class!="")
     {
 
 
-    $query = "insert into secetable values('$roll','$name','$class','$upload')";
+    $query = "insert into secetable values('$roll','$name','$class','$upload','','')";
 
 
     //"INSERT INTO `secbtable`(`rollno`, `name`, `class`) VALUES (110,'manish kumar','3B')

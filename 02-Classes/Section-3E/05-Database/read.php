@@ -9,23 +9,27 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="container">
-    <div class="card">
-        <div class="card-body text-white bg-primary p-1">
-            <h2 class="text-center">CRUD OPERATIONS</h2>
-        </div>
-    </div>
-</div>    
-
-</body>
-</html>        
 <style>
 td{
     padding:10px;
 
 }
 </style>
+<body>
+<br>
+<div class="container">
+<div class="row">
+
+    <div class="col-12">
+    <div class="card mb-4">
+        <div class="card-body text-white bg-primary p-1">
+            <h3 class="text-center">CRUD OPERATIONS</h3>
+        </div>
+    </div>
+    
+
+        
+
 
 <?php
 include 'connection.php';
@@ -47,7 +51,7 @@ $totRec = mysqli_num_rows($data);
 if($totRec!=0)
 {
     ?>
-    <div class="container">
+    
 <table class="table table-striped">
   <thead class="thead-dark">
         <tr>
@@ -55,7 +59,7 @@ if($totRec!=0)
             <th>Photo</th>
             <th>Name</th>
             <th>Class</th>
-            <th class="text-center"colspan="2">Operations</th>
+            <th class="text-center">Operations</th>
         </tr>
 </thead>
        
@@ -69,11 +73,12 @@ if($totRec!=0)
 
         <tr>
             <td>".$result['rollno']."</td>
-            <td><img src='".$result['photo']."' width='50'></td>
+            <td><a href='".$result['photo']."'><img src='".$result['photo']."' width='50'></a></td>
             <td>".$result['name']."</td>
             <td>".$result['class']."</td>
-            <td><a href='update.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</a></td>
-            <td><a href='delete.php?rn=$result[rollno]' onclick = 'return DeleteRecord()'>Delete</a></td>
+            <td class='text-center'><h4><a class='badge badge-warning' href='profile.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]&pic=$result[photo]'>Edit</a> | 
+            <a class='badge badge-primary' href='update.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</a> | 
+            <a class='badge badge-danger'  href='delete.php?rn=$result[rollno]' onclick = 'return DeleteRecord()'>Delete</a></h4></td>
         </tr>
 
         ";
@@ -94,6 +99,10 @@ else
 <div class="text-center">
 <a href="http://localhost/phpCode/02-Classes/Section-3E/05-Database/InsertRecordForm.php">+ Add More Records</a>
 </div>
+    </div>
+    
+
+</div>
 </div>
 <script>
     function DeleteRecord()
@@ -101,3 +110,5 @@ else
         return confirm("Do u want to delete");
     }
 </script>
+</body>
+</html>
