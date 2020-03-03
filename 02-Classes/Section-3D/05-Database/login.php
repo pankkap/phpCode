@@ -7,42 +7,44 @@
 </head>
 <body>
     <form method="post">
-        Username: <input type="text" name="t1"><br><br>
-        Password: <input type="password" name="t2"><br><br>
-        <input type="submit" name="b1" Value="LOGIN">
-
-
+    Username: <input type="text" name="un"><br><br>
+    Password: <input type="password" name="pw"><br><br>
+    <input type="submit" name="submit" Value="LOGIN">
+    
     </form>
 </body>
 </html>
 
 
-
 <?php
 include 'connection.php';
+session_start();
 
-if(isset($_POST['b1']))
+if(isset($_POST['submit']))
 {
-    $uname = $_POST['t1'];
-     $pwd = $_POST['t2'];
+     $Uname = $_POST['un'];
+     $Pwd = $_POST['pw'];
 
-
-    $query = "select * from secdtable where username='$uname' && password='$pwd'";
+    $query = "select * from secdtable where username='$Uname' && password='$Pwd'";
 
     $data = mysqli_query($conn, $query);
-    
-  $tot = mysqli_num_rows($data);
 
-   if($tot==1)
-   {
-       echo "Login Succesful";
-   }
-   else{
-       echo "Login Failed";
-   }
+    
+
+    $tot = mysqli_num_rows($data);
+
+    if($tot==1)
+    {
+        $_SESSION['login_user']=$Uname;
+        // echo "<br>Login Succesfully";
+        header('location:home.php');
+    }
+    else{
+        echo "<br>Login Failed";
+    }
 
 
 }
 
-
 ?>
+

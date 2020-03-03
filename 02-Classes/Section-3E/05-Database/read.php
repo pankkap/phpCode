@@ -76,7 +76,7 @@ if($totRec!=0)
             <td><a href='".$result['photo']."'><img src='".$result['photo']."' width='50'></a></td>
             <td>".$result['name']."</td>
             <td>".$result['class']."</td>
-            <td class='text-center'><h4><a class='badge badge-warning' href='profile.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]&pic=$result[photo]'>Edit</a> | 
+            <td class='text-center'><h4><a class='badge badge-warning' href='profile.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]&pic=$result[photo]'>Profile</a> | 
             <a class='badge badge-primary' href='update.php?rn=$result[rollno]&nm=$result[name]&cl=$result[class]'>Edit</a> | 
             <a class='badge badge-danger'  href='delete.php?rn=$result[rollno]' onclick = 'return DeleteRecord()'>Delete</a></h4></td>
         </tr>

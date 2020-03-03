@@ -1,5 +1,9 @@
 <?php
 
+$roll = $_GET['rn'];
+$name = $_GET['nm'];
+$class = $_GET['cl'];
+$pic = $_GET['pic'];
 
 ?>
 
@@ -22,12 +26,12 @@ body {background-color: grey;}
 }
 </style>
 <body>
-<div class="profilecenter card">
-  <img class="card-img-top" src="upload/1.png" alt="Card image cap">
+<div class="profilecenter card" style="width: 20rem;">
+  <img class="card-img-top" src="<?php echo $pic ?>" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title text-center">Name</h5>
-    <p class="card-text text-center">Rollno</p>
-    <p class="card-text text-center">CLass</p>
+    <h5 class="card-title text-center">Rollno: <?php echo $roll ?></h5>
+    <p class="card-text text-center"><b>Name: </b><?php echo $name ?></p>
+    <p class="card-text text-center"><b>Class: </b><?php echo $class ?></p>
   </div>
 </div>
 </body>
